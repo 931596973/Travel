@@ -92,7 +92,7 @@ export default {
       right 0
       bottom .44rem
       box-sizing border-box
-      padding .2rem
+      padding .2rem .4rem
       .icon-img-content
         width 100%
         height 100%
