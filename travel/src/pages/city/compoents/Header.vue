@@ -24,6 +24,7 @@ export default {
     color #fff
     background $bgColor
     font-size .32rem
+    border none
     .header-back
       top 0
       left 0
