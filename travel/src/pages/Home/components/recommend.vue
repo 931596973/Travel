@@ -2,7 +2,7 @@
 <div>
   <div class="recomment-title">热销推荐</div>
   <ul>
-    <li class="item border-bottom" v-for="item of recomendList" :key="item.id">
+    <li class="item border-bottom" v-for="item of list" :key="item.id">
       <img class="item-img" :src="item.imgUrl" alt="无法显示">
       <div class="item-info">
         <p class="item-title">{{item.title}}</p>
@@ -17,25 +17,8 @@
 <script>
 export default {
   name: 'HomeReCommend',
-  data () {
-    return {
-      recomendList: [ {
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg',
-        title: '北京野生动物园',
-        desc: '北京野生动物园集动物保护、野生动物驯养繁殖及科普教育为一体.'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg',
-        title: '北京野生动物园',
-        desc: '北京野生动物园集动物保护、野生动物驯养繁殖及科普教育为一体.'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg',
-        title: '北京野生动物园',
-        desc: '北京野生动物园集动物保护、野生动物驯养繁殖及科普教育为一体.'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
